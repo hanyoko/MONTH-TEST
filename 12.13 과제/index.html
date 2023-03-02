@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="header_top">
+                <ul id="top">
+                    <li><a href=""><img src="./image/icon_youtube02.png" alt=""></a></li>
+                    <li><a href=""><img src="./image/icon_insta02.png" alt=""></a></li>
+                    <li><a href=""><img src="./image/icon_blog02.png" alt=""></a></li>
+                    <li><a href=""><img src="./image/icon_face02.png" alt=""></a></li>
+                    <li><a href="">홈으로</a></li>
+                </ul>
+            </div>
+            <header>
+                <h1>GREEN BOOKS</h1>
+                <ul class="header1">
+                    <li><a href="">My Books</a></li>
+                    <li><a href="">Browse</a></li>
+                </ul>
+                <div class="input">
+                    <input id="search" type="text" name="searchWord" value="찾으시는 검색어를 입력해주세요." onfocus="this.value='';this.className='box'" onblur="if (this.value.length==0) {this.className='box';}" class="box">
+                    <img src="./image/bsearch_icon.png" alt="">
+                </div>
+                <div id="btn">
+                    <p><a href="">Log In</a></p>
+                    <button class="signup">Sign Up</button>
+                    <button class="talk">상담톡</button>
+                </div>
+            </header>
+            <ul id="menu">
+                <li><a href="">대표도서관</a></li>
+                <li><a href="">도서 정보</a></li>
+                <li><a href="">도서관 이용</a></li>
+                <li><a href="">신청 및 예약</a></li>
+                <li><a href="">고객 참여</a></li>
+                <li><a href="">내 서재</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="left">
+                <div id="cenArea" style="position:relative;">
+					<!-- 오늘의 책 -->
+                    <div class="today" style="position:relative; margin-bottom: 30px;">
+                        <h2> 오늘의 책 </h2>
+                        <div style="clear:both;"></div>
+                        
+                        <div id="divTodayBook_0" style="position:relative;display:block;">
+                            <a href="/book.yp?bookcd=101206195">
+                                <div class="book_today">
+                                    <img src="./image/101206195.jpg" alt="">
+                                    <div class="subtitle">
+                                        <p class="today_subTit">아시아 9개 도시, 9명의 젊은 작가들. 하나의 키워드로 그려낸 아홉 결의 스펙트럼</p>
+                                        <p class="today_tit">절연</p>
+                                        <p class="today_bookInfo1">판매가: <span><strong>15,300</strong>원</span> (정세랑 외 | 문학동네)</p>
+                                        <p class="today_bookInfo2">아시아의 젊은 소설가들이 함께 쓴 소설집. 9명의 작가들이 하나의 키워드로 집필한 단편소설을 모은 작품집이다. ‘혼돈’이 가득한 사회를 떠나 ‘무無’가 되고 싶어하는 사람들(일본), 부정적인 감정을 품으면 정서 구치소에 수감되는 ‘긍정 도시’의 사람들(중국), 연속되는 공론화 가운데 윤리관의 차이로 절연하는 친구들(한국), 혁명 속에서 만나고 이별하는 연인들의 이야기(태국) 등, 프로젝트에 동참한 작가들은 때로는 상상의 힘을 빌려, 때로는 치열한 현실의 재현을 통해 우리의 삶을 생생하게 그려냈다.</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./image/휴관일-안내(12월).png" alt="">
+            </div>
+        </div>
+        <div>
+            <!-- msection1 -->
+            <div id="msection1">
+                <div class="link_wrap">
+                    <div class="swiper link_Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href=""><i class="ico1"></i><span>희망도서<br/>바로대출 신청</span></a></div>
+                            <div class="swiper-slide"><a href=""><i class="ico2"></i><span>희망도서<br/>신청</span></a></div>
+                            <div class="swiper-slide"><a href=""><i class="ico3"></i><span>상호대차<br/>신청현황</span></a></div>
+                            <div class="swiper-slide"><a href="" target="_blank"><i class="ico8"></i><span>전자도서관</span></a></div>
+                            <div class="swiper-slide"><a href="" target="_blank"><i class="ico9"></i><span>시요일</span></a></div>
+                            <div class="swiper-slide"><a href=""><i class="ico5"></i><span>시설이용신청</span></a></div>
+                            <div class="swiper-slide"><a href=""><i class="ico6"></i><span>모바일<br/>회원증</span></a></div>
+                            <!--<div class="swiper-slide"><a href="/main/contents.do?idx=3092"><i class="ico7"></i><span>책이음/<br/>책나래</span></a></div>-->
+                        </div>
+                        <div class="swiper-button-next link_btn"></div>
+                        <div class="swiper-button-prev link_btn"></div>
+                    </div>
+
+                    <script>
+                    var link_Swiper = new Swiper(".link_Swiper", {
+                        slidesPerView: 7,
+                        navigation: {
+                        nextEl: ".swiper-button-next.link_btn",
+                        prevEl: ".swiper-button-prev.link_btn",
+                        },
+                        breakpoints: {
+                            1023: {
+                                slidesPerView: 5,
+                                loop: true,
+                            },
+                            900: {
+                                slidesPerView: 3,
+                                loop: true,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                                loop: true,
+                            },
+                            380: {
+                                slidesPerView: 2,
+                                loop: true,
+                            },
+                        },
+                    });
+                    </script>
+                </div>	
+                <a href="" class="link_banner"><img src="./image/quick_ban.gif" alt="한줄감상평 자유롭게 참여하세요 참여하기"/></a>
+	        </div>
+	<!--// msection1 -->
+        </div>
+        <div id="book">
+            <div>
+                <img src="./image/32436266805.20221019114829.jpg" alt="">
+                <button class="a">Priview</button>
+                <p class="new">New</p>
+            </div>
+            <div>
+                <img src="./image/32438177755.20221019135504.jpg" alt="">
+                <button class="b">Join Waitlist</button>
+                <img class="mark" src="./image/mark01.png" alt="">
+                <p class="recommend">추천</p>
+            </div>
+            <div>
+                <img src="./image/32444878874.20221019134934.jpg" alt="">
+                <button class="c">Checked Out</button>
+                <img class="mark" src="./image/mark01.png" alt="">
+                <p class="recommend">추천</p>
+            </div>
+            <div>
+                <img src="./image/33684983664.20221019120217.jpg" alt="">
+                <button class="c">Not in Library</button>
+                <img class="mark" src="./image/mark01.png" alt="">
+                <p class="recommend">추천</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
